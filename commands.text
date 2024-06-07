@@ -1,0 +1,4 @@
+go mod init github.com/KMjanith/react-go-tutorial
+
+//get fiber
+go get github.com/gofiber/fiber/v2
