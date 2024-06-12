@@ -1,4 +1,23 @@
 go mod init github.com/KMjanith/react-go-tutorial
 
 //get fiber
-go get github.com/gofiber/fiber/v2
+go get github.com/gofiber/fiber/v2    ----> go.sum
+
+
+// Initialize a new module
+go mod init <module_name>    ----> go.mod (equivalent to package.json)
+
+// Compile and run a Go program
+go run <main_file.go>
+
+// Download and install packages from remote repositories, does not handle versioninig
+go get
+ 
+// Add missing modules and remove unused modules (equivalant to npm install)
+go mod tidy    ----> updates go.mod
+
+// Live reload tool 
+go install github.com/cosmtrek/air@latest
+
+// To get environement variables from a .env file
+go get github.com/joho/getenv
